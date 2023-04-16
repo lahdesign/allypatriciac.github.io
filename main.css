@@ -2,30 +2,52 @@ body{
   background-image: url(assets/background1-03.svg);
   background-repeat: no-repeat;
   background-size:cover;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center; 
 }
+.hero-wrapper{
+  height:100vh;
+  display: grid; 
+  grid-template-columns: repeat(6, 1fr); 
+  grid-template-rows: repeat(5, 1fr); 
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; 
+  }
+
+  /* .background { grid-area: 1 / 1 / 6 / 7; 
+  height:100vh;} */
+
+  
+    .gravestone-text{
+      grid-area: 2 / 3 / 5 / 5; 
+      text-align: center;
+      /* scale:1.5; */
+      /* position:absolute; */
+      /* top:200px; */
+      /* left:650px; */
+    }
+  
+
+
+
 .ghost-coffin{
-    scale:.12;
+    /* scale:.12; */
     align-items: center;
-   position: absolute;
-    top:-500px;
+   /* position: absolute; */
+    /* top:-500px; */
 
   }
 .coffin{
-  scale:.12;
+  /* scale:.12; /assets/background1-03.svg*/
   align-items: center;
-  position:absolute;
-  top:-500px;
+  /* position:absolute; */
+  /* top:-500px; */
 
  
   }
 
-.gravestone-text{
-  text-align: center;
-  scale:1.5;
-  position:absolute;
-  top:200px;
-  left:650px;
-}
+
 
 h1, h2, h3{
 font-family: "lores-12-bold-alt-oakland", sans-serif;
@@ -67,22 +89,22 @@ color:aliceblue;
   
 
   /* nav grid*/
-  nav{
-    padding-left:4em;
-    padding-right: 4em;
-    width: 100%;
-    top:0;
-    left:0;
+  nav{ grid-area: 5 / 2 / 6 / 6;
+    /* padding-left:4em; */
+    /* padding-right: 4em; */
+    /* width: 100%; */
+    /* top:0; */
+    /* left:0; */
     z-index:10;
   }
 
   nav ul {
     margin:0;
     padding:0;
-    position:absolute;
-    top:700px; 
-    left:485px;
-    scale:1.2;
+    /* position:absolute; */
+    /* top:700px;  */
+    /* left:485px; */
+    /* scale:1.2; */
     display:flex;
   }
   nav li{
